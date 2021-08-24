@@ -1,0 +1,44 @@
+.partners {
+	background: url(/img/bg_second.jpg) center no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 100px 0;
+	@media screen and (max-width: 767px) {
+		padding: 40px 0 40px;
+	}
+	&__conteiner {
+	}
+
+	&__tittle {
+		font-size: 30.4px;
+		line-height: 1.2;
+		font-weight: 300;
+		letter-spacing: 0.06em;
+		color: #ffffff;
+		margin-bottom: 90px;
+		@media screen and (max-width: 767px) {
+			margin-bottom: 50px;
+		}
+	}
+
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.logo-partners {
+	&__item {
+		margin-right: 110px;
+		&:last-child {
+			margin: 0;
+		}
+		
+		@media screen and (max-width: 767px) {
+			margin-right: 80px;
+		}
+		@media screen and (max-width: 425px) {
+			margin-right: 40px;
+		}
+	}
+}

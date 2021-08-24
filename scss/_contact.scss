@@ -1,0 +1,159 @@
+.contact {
+	font-size: 14px;
+	padding: 180px 0 100px;
+	text-align: center;
+	@media screen and (max-width: 767px) {
+		padding: 40px 0 20px;
+	}
+	&__conteiner {
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__tittle {
+		margin-bottom: 165px;
+		@media screen and (max-width: 767px) {
+			margin-bottom: 100px;
+		}
+	}
+
+	&__form {
+		margin-right: 80px;
+		flex: 0 1 50%;
+		@media screen and (max-width: 767px) {
+			flex: 0 1 100%;
+			margin-bottom: 40px;
+		}
+	}
+
+	&__help {
+		flex: 0 1 255px;
+		@media screen and (max-width: 767px) {
+			flex: 0 1 100%;
+		}
+	}
+}
+.form-contact {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	@media screen and (max-width: 425px) {
+		margin: 0 auto 40px;
+	}
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		// flex-wrap: wrap;
+		margin-bottom: 75px;
+		@media screen and (max-width: 425px) {
+			margin-bottom: 40px;
+			flex-wrap: wrap;
+		}
+	}
+	&__name,
+	&__email,
+	&__message {
+		border: none;
+		outline: none;
+		border-bottom: 2px black solid;
+		padding-bottom: 20px;
+		height: 35px;
+	}
+
+	&__name {
+		flex: 0 1 50%;
+		margin-right: 60px;
+		@media screen and (max-width: 425px) {
+			flex: 0 1 100%;
+			margin: 0 0 40px 0;
+		}
+	}
+
+	&__email {
+		flex: 0 1 50%;
+		@media screen and (max-width: 425px) {
+			flex: 0 1 100%;
+		}
+	}
+
+	&__message {
+		display: block;
+		width: 100%;
+		overflow: hidden;
+		resize: none;
+		&::placeholder {
+			display: inline-block;
+		}
+		margin-bottom: 160px;
+		@media screen and (max-width: 767px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__btn {
+		width: 100%;
+		display: inline-flex;
+		justify-content: flex-end;
+		font-family: inherit;
+		border: none;
+		cursor: pointer;
+		background-color: inherit;
+		transition: color 0.3s linear;
+		&:hover {
+			color: lighten($color: #000000, $amount: 30);
+		}
+	}
+}
+.help-contact {
+	text-align: start;
+	&__text,
+	&__link,
+	&__email {
+		font-size: 14px;
+		line-height: 26px;
+		font-weight: 300;
+		color: #000000;
+	}
+	&__text {
+		margin-bottom: 40px;
+	}
+
+	&__link {
+		font-weight: 700;
+	}
+
+	&__email {
+		span {
+			font-weight: 700;
+		}
+	}
+}
+.link-help-contact {
+	margin-bottom: 12px;
+	&__name {
+		margin-bottom: 25px;
+	}
+
+	&__social {
+		display: flex;
+		align-items: center;
+	}
+
+	&__in,
+	&__fb {
+		border: 2px solid #1e1e1e;
+		padding: 7px 10px;
+		border-radius: 50%;
+	}
+
+	&__in {
+		margin-right: 10px;
+		padding: 9px;
+		cursor: pointer;
+	}
+
+	&__fb {
+		cursor: pointer;
+	}
+}

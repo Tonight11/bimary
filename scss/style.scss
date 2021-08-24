@@ -1,0 +1,79 @@
+@import "_header";
+@import "_reset";
+@import "_nav";
+@import "_about";
+@import "_portfolio";
+@import "_partners";
+@import "_contact";
+@import "_footer";
+body {
+	font-family: Lato;
+	font-weight: 400;
+	&.lock {
+		overflow: hidden;
+	}
+}
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.conteiner {
+	max-width: 1115px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.btn {
+	display: inline-block;
+	position: relative;
+	transition: box-shadow 0.8s linear;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+	padding: 1em 2.5em;
+	border: 1px solid #ffffff;
+	&:hover {
+		box-shadow: inset 2px 2px 18px 2px #ffffff;
+	}
+}
+
+.tittle {
+	display: inline-block;
+	font-size: 34px;
+	line-height: 1.2;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.16em;
+	color: #000000;
+
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -35px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		display: block;
+		width: 81px;
+		height: 1px;
+		background-color: #000000;
+	}
+}
+
+.text {
+	display: block;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: 300;
+	color: #868585;
+
+	text-align: center;
+}

@@ -1,0 +1,120 @@
+.portfolio {
+	padding: 107px 0 62px;
+	background-color: #f3f3f3;
+	@media screen and (max-width: 767px) {
+		padding: 40px 0 20px;
+	}
+	&__top {
+		text-align: center;
+		margin-bottom: 135px;
+		@media screen and (max-width: 767px) {
+			margin-bottom: 35px;
+		}
+	}
+
+	&__tittle {
+		margin-bottom: 90px;
+		@media screen and (max-width: 767px) {
+			margin-bottom: 60px;
+		}
+	}
+
+	&__categories {
+	}
+
+	&__menu {
+	}
+
+	&__body {
+		margin-bottom: 65px;
+	}
+
+	&__column {
+	}
+
+	&__bottom {
+		text-align: center;
+	}
+
+	&__button {
+		&.btn {
+			color: black;
+			border: 1px solid black;
+			transition: box-shadow 0.8s linear;
+			&:hover {
+				box-shadow: inset 0.5px 0.5px 18px rgb(59, 59, 59);
+			}
+		}
+	}
+}
+.menu-portfolio {
+	display: flex;
+	&__conteiner {
+	}
+
+	&__item {
+		display: flex;
+		justify-content: center;
+		li {
+			margin-right: 50px;
+			cursor: pointer;
+			&:last-child {
+				margin: 0;
+			}
+			@media screen and (max-width: 767px) {
+				margin-right: 25px;
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	&__link {
+		@media screen and (max-width: 767px) {
+			font-size: 16px;
+		}
+	}
+}
+.column-portfolio {
+	margin: -7.5px -12.5px;
+	display: flex;
+	flex-wrap: wrap;
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		&:last-child > * {
+			padding: 7.5px 12.5px 0;
+		}
+		@media screen and (max-width: 767px) {
+			&:last-child > * {
+				padding: 7.5px 12.5px;
+			}
+		}
+	}
+	&__item {
+		padding: 7.5px 12.5px;
+		flex: 1 1 50%;
+		height: 365px;
+		@media screen and (max-width: 767px) {
+			flex: 0 1 100%;
+		}
+	}
+
+	&__link {
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.3s linear;
+		&:hover {
+			transform: translate(-5px, -5px);
+		}
+	}
+}
+
+.hide {
+	display: none;
+}
