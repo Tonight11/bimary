@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .header {
-  background: url(img/bg.jpg) center no-repeat;
+  background: url(../img/bg.jpg) center no-repeat;
   background-size: cover;
   text-align: center;
   min-height: 100vh;
